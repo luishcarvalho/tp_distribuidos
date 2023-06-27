@@ -7,6 +7,7 @@ run:
 	@gnome-terminal -- bash -c "source venv/Scripts/activate && python3 -m Pyro5.nameserver; exec bash" &
 	@gnome-terminal -- bash -c "source venv/Scripts/activate && python3 server.py; exec bash" &
 	@gnome-terminal -- bash -c "source venv/Scripts/activate && python3 client.py; exec bash" &
+	@gnome-terminal -- bash -c "source venv/Scripts/activate && python3 client.py; exec bash" &
 
 .PHONY: install run
 
